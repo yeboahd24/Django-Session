@@ -1,0 +1,6 @@
+{% extends "base.html" %} {% block title %} Movie Select {% endblock title %} {% block content %}
+<h1>Movie Select</h1>
+<form action="" method="POST">{{form.as_p}}{% csrf_token %}
+    <button type="submit" class="ui button primary">Select</button>
+</form>
+{% endblock content %}
